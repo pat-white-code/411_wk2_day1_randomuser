@@ -1,0 +1,58 @@
+h1 {
+  font-size: 17px;
+}
+h2 {
+  font-size: 12px;
+}
+
+.user-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  width: 170px;
+  background-color: aliceblue;
+  box-shadow: 4px 4px 15px rgb(24, 24, 24),
+              -2px -2px 12px rgb(24, 24, 24);
+  color: black;
+  z-index: 2;
+}
+
+.img-container {
+  height: 35%;
+  background-color: rgb(254, 92, 92);
+}
+
+.info-container {
+  padding:0 10px;
+  text-align: left;
+  height: 50%;
+}
+
+.user-img {
+  margin: 5px;
+  height: 150%;
+  border-radius: 50%;
+}
+
+.more-info {
+  color: black;
+  height: 180px;
+  width: 150px;
+  z-index: 1;
+  position: relative;
+  left: -5px;
+  background-color: aliceblue;
+  box-shadow: 4px 4px 15px rgb(24, 24, 24);
+}
+
+.wrapper {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .hidden {
+  display: none;
+} */
