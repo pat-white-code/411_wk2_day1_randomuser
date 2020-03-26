@@ -9,18 +9,22 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 250px;
-  width: 170px;
+  height: 300px;
+  width: 225px;
   background-color: aliceblue;
-  box-shadow: 4px 4px 15px rgb(24, 24, 24),
-              -2px -2px 12px rgb(24, 24, 24);
+  box-shadow: 4px 4px 15px rgb(24, 24, 24);
+              /* -2px -2px 12px rgb(24, 24, 24); */
   color: black;
   z-index: 2;
+  transition: 1s;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .img-container {
-  height: 35%;
+  height: 31%;
   background-color: rgb(254, 92, 92);
+  padding: 10px 0 0 0;
 }
 
 .info-container {
@@ -37,13 +41,17 @@ h2 {
 
 .more-info {
   color: black;
-  height: 180px;
-  width: 150px;
+  height: 241px;
+  width: 175px;
   z-index: 1;
   position: relative;
-  left: -5px;
+  left: -20px;
   background-color: aliceblue;
   box-shadow: 4px 4px 15px rgb(24, 24, 24);
+  animation-name: card-slide;
+  animation-duration: 400ms;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -52,6 +60,26 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
+@keyframes card-slide {
+  from {left: -100px;}
+  to {left: -20px;}
+}
+
+.user-card-slide {
+  position: relative;
+  left: 0px;
+  animation-name: user-card-slide;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+}
+
+@keyframes user-card-slide {
+  from {left: 75px;}
+  to {left: 0px;}
+}
+
+
 
 /* .hidden {
   display: none;

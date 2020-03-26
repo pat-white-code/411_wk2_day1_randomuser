@@ -8,7 +8,7 @@ class User extends Component{
 
   showMore = () => {
     this.setState({
-      showMore: true
+      showMore: !this.state.showMore
     })
   }
   
@@ -17,7 +17,7 @@ class User extends Component{
     // console.log(this.props);  
     return(
       <div className='wrapper'>
-        <div className='user-card'>
+        <div className={`user-card ${this.state.showMore ? 'user-card-slide' : ''}`}>
           <div className='img-container'>
             <img className='user-img' alt='user thumbnail' src={user.picture.large} />
           </div>
