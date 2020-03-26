@@ -13,6 +13,8 @@ h2 {
   width: 225px;
   background-color: aliceblue;
   box-shadow: 4px 4px 15px rgb(24, 24, 24);
+  position: relative;
+  left: 90px;
               /* -2px -2px 12px rgb(24, 24, 24); */
   color: black;
   z-index: 2;
@@ -45,11 +47,9 @@ h2 {
   width: 175px;
   z-index: 1;
   position: relative;
-  left: -20px;
+  left: -95px;
   background-color: aliceblue;
   box-shadow: 4px 4px 15px rgb(24, 24, 24);
-  animation-name: card-slide;
-  animation-duration: 400ms;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -59,6 +59,12 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card-slide {
+  animation-name: card-slide;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
 }
 
 @keyframes card-slide {

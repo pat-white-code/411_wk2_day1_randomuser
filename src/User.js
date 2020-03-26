@@ -30,14 +30,9 @@ class User extends Component{
             <button>Show More >> </button>
           </div> */}
         </div>
-
-        {this.state.showMore && (
-
-          <div className='more-info'>
+          <div className={`more-info ${this.state.showMore ? 'card-slide' : ''}`}>
             <p>Age: {user.dob.age}</p>
           </div>
-
-        )}
       </div>
     )
   }
