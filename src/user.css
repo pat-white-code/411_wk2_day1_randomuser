@@ -67,10 +67,6 @@ h2 {
   animation-fill-mode: both;
 }
 
-@keyframes card-slide {
-  from {left: -100px;}
-  to {left: -20px;}
-}
 
 .user-card-slide {
   position: relative;
@@ -79,12 +75,34 @@ h2 {
   animation-duration: 400ms;
   animation-fill-mode: both;
 }
+.user-card-unslide {
+  animation-name: user-card-unslide;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+}
+.card-unslide {
+  animation-name: card-unslide;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+}
 
 @keyframes user-card-slide {
   from {left: 75px;}
   to {left: 0px;}
 }
+@keyframes user-card-unslide {
+  from {left: 0px;}
+  to {left: 75px;}
+}
 
+@keyframes card-slide {
+  from {left: -100px;}
+  to {left: -20px;}
+}
+@keyframes card-unslide {
+  from {left: -20px;}
+  to {left: -100px;}
+}
 
 
 /* .hidden {
