@@ -5,6 +5,15 @@ h2 {
   font-size: 12px;
 }
 
+p {
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+}
+
+.email {
+  font-size: 12px;
+}
+
 .user-card{
   display: flex;
   flex-direction: column;
@@ -52,6 +61,7 @@ h2 {
   box-shadow: 4px 4px 15px rgb(24, 24, 24);
   border-radius: 20px;
   overflow: hidden;
+  /* padding: 10px 20px; */
 }
 
 .wrapper {

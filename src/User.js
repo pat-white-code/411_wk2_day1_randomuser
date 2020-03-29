@@ -33,7 +33,7 @@ class User extends Component{
           </div>
           <div className='info-container'>
             <h1>{user.name.first} {user.name.last}</h1>
-            <h2>{user.phone}</h2>
+            <h2>{user.email}</h2>
             <button onClick={this.showMore}>Show More >> </button>
           </div>
           {/* <div className='show-button'>
@@ -41,12 +41,16 @@ class User extends Component{
           </div> */}
         </div>
           <div className={`more-info ${slideClass}`}>
-            <p>Age: {user.dob.age}</p>
+            <p>Age {user.dob.age}</p>
+            <p className='email'>{user.phone}</p>
+            <p>Nationality: {user.nat}</p>
           </div>
       </div>
     )
   }
 }
+
+// Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 export default User;
 
