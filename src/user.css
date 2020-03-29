@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 h1 {
   font-size: 17px;
 }
@@ -54,6 +57,8 @@ p {
   color: black;
   height: 241px;
   width: 175px;
+  padding: 25px;
+  font-size: 12px;
   z-index: 1;
   position: relative;
   left: -95px;

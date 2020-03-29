@@ -7,7 +7,7 @@ class User extends Component{
     rendered:false
   }
 
-  showMore = () => {
+  toggleShow = () => {
     this.setState({
       showMore: !this.state.showMore,
       rendered: true
@@ -34,7 +34,13 @@ class User extends Component{
           <div className='info-container'>
             <h1>{user.name.first} {user.name.last}</h1>
             <h2>{user.email}</h2>
-            <button onClick={this.showMore}>Show More >> </button>
+            <button onClick={this.toggleShow}>
+              {!this.state.showMore ? 
+              'Show More >> '
+              :
+              '<< Show Less'
+              }
+            </button>
           </div>
           {/* <div className='show-button'>
             <button>Show More >> </button>
@@ -42,7 +48,7 @@ class User extends Component{
         </div>
           <div className={`more-info ${slideClass}`}>
             <p>Age {user.dob.age}</p>
-            <p className='email'>{user.phone}</p>
+            <p>{user.phone}</p>
             <p>Nationality: {user.nat}</p>
           </div>
       </div>
